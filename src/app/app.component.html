@@ -1,3 +1,15 @@
 <main>
-
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <spam>Contacto</spam> 
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-card *ngFor = "let contact of contacts; let i = index">
+        <mat-card-header>
+            {{contact.name}}
+        </mat-card-header>
+        <mat-card-subtitle>
+            {{contact.number}}
+        </mat-card-subtitle>
+    </mat-card>
 </main>
